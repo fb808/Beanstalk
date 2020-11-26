@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab1"
+        app:showAsAction="always"
+        android:tooltipText="1번"
+        android:enabled="true"
+        android:checked="true"
+        android:title="리스트" />
+<!--        android:icon="@drawable/main_list_icon"-->
+
+    <item
+        android:id="@+id/tab2"
+        app:showAsAction="always"
+        android:tooltipText="2번"
+        android:enabled="true"
+        android:title="기록"/>
+<!--        android:icon="@drawable/main_record_icon"-->
+
+    <item android:id="@+id/tab3"
+        app:showAsAction="always"
+        android:tooltipText="3번"
+        android:enabled="true"
+        android:title="더보기"/>
+<!--        android:icon="@drawable/main_more_icon"-->
+
+</menu>
