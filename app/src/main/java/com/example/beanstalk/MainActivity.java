@@ -3,56 +3,67 @@ package com.example.beanstalk;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    BottomNavigationView bottomNavigationView;
-    Fragment1 fragment1;
-    Fragment2 fragment2;
-    Fragment3 fragment3;
+    Button btn_SignUp, btn_login;
+    EditText et_email, et_password;
+    private FirebaseAuth firebaseAuth;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
-        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        btn_SignUp = findViewById(R.id.btn_SignUp_form);
+        btn_login = findViewById(R.id.btn_login);
+        et_email = findViewById(R.id.et_Email);
+        et_password = findViewById(R.id.et_Password);
 
-        fragment1 = new Fragment1();
-        fragment2 = new Fragment2();
-        fragment3 = new Fragment3();
 
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.main_layout, fragment1).commitAllowingStateLoss();
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        btn_SignUp.setOnClickListener(new View.OnClickListener(){
+            //버튼을 클릭했을 때 실행하는 이벤트
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
-                    case R.id.tab1:{
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.main_layout,fragment1).commitAllowingStateLoss();
-                        return true;
-                    }
-
-                    case R.id.tab2:{
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.main_layout,fragment2).commitAllowingStateLoss();
-                        return true;
-                    }
-
-                    case R.id.tab3:{
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.main_layout,fragment3).commitAllowingStateLoss();
-                        return true;
-                    }
-
-                    default:return false;
-                }
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(intent);
+//                setContentView(R.layout.activity_signup);
             }
         });
+
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String email = et_email.getText().toString().trim();
+                String password = et_password.getText().toString().trim();
+                firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                            startActivity(intent);
+                        }else{
+                            Toast.makeText(MainActivity.this, "로그인 오류", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+        });
+
     }
 }
