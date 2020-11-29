@@ -17,4 +17,5 @@ public class Fragment1 extends Fragment{
         viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment1,container,false);
         return viewGroup;
     }
+
 }

@@ -30,18 +30,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        firebaseAuth = FirebaseAuth.getInstance();
+
         btn_SignUp = (Button) findViewById(R.id.btn_SignUp_form);
         btn_login = (Button) findViewById(R.id.btn_login);
         et_email = (EditText) findViewById(R.id.et_Email);
         et_password = (EditText) findViewById(R.id.et_Password);
+
+
+        btn_SignUp.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                startActivity(intent);
+                setContentView(R.layout.activity_signup);
+            }
+        });
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email = et_email.getText().toString().trim();
                 String password = et_password.getText().toString().trim();
-                firebaseAuth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
@@ -52,14 +64,6 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
-            }
-        });
-
-        btn_SignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
-                startActivity(intent);
             }
         });
 
