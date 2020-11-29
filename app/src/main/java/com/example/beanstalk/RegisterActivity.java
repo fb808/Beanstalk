@@ -34,17 +34,14 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-
-
         etName = (EditText) findViewById(R.id.et_SetName);
         etEmail = (EditText) findViewById(R.id.et_SetEmail);
         etPassword = (EditText) findViewById(R.id.et_SetPassword);
         etPasswordCheck = (EditText) findViewById(R.id.et_ConfirmPassword);
         btnSignUp = (Button) findViewById(R.id.btn_SignUp);
 
-        /**
-         *
-         * firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
+
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -98,6 +95,5 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
-**/
     }
 }
