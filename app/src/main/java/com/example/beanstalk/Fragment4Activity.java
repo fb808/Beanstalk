@@ -53,5 +53,24 @@ public class Fragment4Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button account = (Button) findViewById(R.id.account);
+        Button privacy = (Button) findViewById(R.id.privacy);
+        Button intro_service = (Button) findViewById(R.id.introduce_service);
+        Button intro_developer = (Button) findViewById(R.id.introduce_developer);
+
+        intro_service.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.intro_service);
+            }
+        });
+
+        intro_developer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.intro_developer);
+            }
+        });
     }
 }

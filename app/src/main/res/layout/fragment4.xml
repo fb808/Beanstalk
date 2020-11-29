@@ -61,60 +61,63 @@
         android:layout_width="wrap_content"
         android:layout_height="2dp"
         android:background="#9acc99"/>
-    <TextView
+
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="내정보"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="60dp"/>
+        android:layout_height="5dp"
+        android:layout_marginBottom="50dp"/>
 
     <Button
+        android:id="@+id/account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:background="#ffffff"
+        android:layout_marginBottom="10dp"
         android:stateListAnimator="@null"
         android:text="계정"/>
 
     <Button
+        android:id="@+id/privacy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="15sp"
-        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
         android:background="#ffffff"
         android:stateListAnimator="@null"
         android:text="개인정보 및 보안"/>
 
     <Button
+        android:id="@+id/introduce_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="15sp"
-        android:layout_marginBottom="5dp"
-        android:background="#ffffff"
-        android:stateListAnimator="@null"
-        android:text="알림"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="15sp"
-        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
         android:background="#ffffff"
         android:stateListAnimator="@null"
         android:text="서비스 소개"/>
 
     <Button
+        android:id="@+id/introduce_developer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="15sp"
-        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:stateListAnimator="@null"
+        android:text="개발자 소개"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
         android:background="#9acc99"
         android:stateListAnimator="@null"
         android:text="로그아웃" />
