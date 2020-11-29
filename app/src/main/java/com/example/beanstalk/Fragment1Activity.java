@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Fragment1Activity extends AppCompatActivity {
 
-
+    //자격증 정보
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

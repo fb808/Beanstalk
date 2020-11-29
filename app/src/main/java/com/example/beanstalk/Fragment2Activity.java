@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Fragment2Activity extends AppCompatActivity {
 
+    // 컴퓨터 자격증 정보
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment2);

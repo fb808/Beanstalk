@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Fragment4Activity extends AppCompatActivity {
 
+    // 내 정보
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment4);
