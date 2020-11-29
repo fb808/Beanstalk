@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     EditText et_email, et_password;
     private FirebaseAuth firebaseAuth;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,23 +36,25 @@ public class MainActivity extends AppCompatActivity {
         et_email = (EditText) findViewById(R.id.et_Email);
         et_password = (EditText) findViewById(R.id.et_Password);
 
-
         btn_SignUp.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
-                setContentView(R.layout.activity_signup);
             }
         });
+
+        //여기까지실행가능
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email = et_email.getText().toString().trim();
                 String password = et_password.getText().toString().trim();
-                firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                firebaseAuth.signInWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
