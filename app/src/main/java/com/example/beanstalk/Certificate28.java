@@ -92,7 +92,7 @@ class MyHelper28 extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String table = "create table certificate28 ( event varchar(20), name varchar(30) primary key, part varchar(30), agency varchar(30), written_fees integer, practical_fees integer );";
         sqLiteDatabase.execSQL(table);
-        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('영업.판매', '텔레마케팅관리사', '고용노동부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate28 VALUES ('영업.판매', '텔레마케팅관리사', '고용노동부', '한국산업인력공단', 19400, 20800)");
     }
 
     @Override

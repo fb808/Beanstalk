@@ -92,9 +92,9 @@ class MyHelper26 extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String table = "create table certificate26 ( event varchar(20), name varchar(30) primary key, part varchar(30), agency varchar(30), written_fees integer, practical_fees integer );";
         sqLiteDatabase.execSQL(table);
-        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('어업', '수산양식기능사', '해양수산부', '한국산업인력공단', 14500, 45700)");
-        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('어업', '어로산업기사', '해양수산부', '한국산업인력공단', 19400, 20800)");
-        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('어업', '어업생산관리기사', '해양수산부', '한국산업인력공단', 19400, 25000)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate26 VALUES ('어업', '수산양식기능사', '해양수산부', '한국산업인력공단', 14500, 45700)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate26 VALUES ('어업', '어로산업기사', '해양수산부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate26 VALUES ('어업', '어업생산관리기사', '해양수산부', '한국산업인력공단', 19400, 25000)");
     }
 
     @Override

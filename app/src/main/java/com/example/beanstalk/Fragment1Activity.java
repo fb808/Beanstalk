@@ -404,6 +404,14 @@ public class Fragment1Activity extends AppCompatActivity {
         });
 
         Button btn40 = (Button) findViewById(R.id.btn40);
+        btn40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate40.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn41 = (Button) findViewById(R.id.btn41);
         Button btn42 = (Button) findViewById(R.id.btn42);
         Button btn43 = (Button) findViewById(R.id.btn43);

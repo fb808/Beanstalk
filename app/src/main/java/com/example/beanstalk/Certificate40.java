@@ -16,12 +16,12 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class Certificate23 extends AppCompatActivity {
+public class Certificate40 extends AppCompatActivity {
     ArrayList<CertificateData> CerDateList = new ArrayList<CertificateData>();
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_certificate23);
+        setContentView(R.layout.activity_certificate40);
 
         Button btn_1 = (Button) findViewById(R.id.btn_menu1);
         Button btn_2 = (Button) findViewById(R.id.btn_menu2);
@@ -31,7 +31,7 @@ public class Certificate23 extends AppCompatActivity {
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Certificate23.this, Fragment1Activity.class);
+                Intent intent = new Intent(Certificate40.this, Fragment1Activity.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +39,7 @@ public class Certificate23 extends AppCompatActivity {
         btn_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Certificate23.this, Fragment2Activity.class);
+                Intent intent = new Intent(Certificate40.this, Fragment2Activity.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +47,7 @@ public class Certificate23 extends AppCompatActivity {
         btn_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Certificate23.this, Fragment3Activity.class);
+                Intent intent = new Intent(Certificate40.this, Fragment3Activity.class);
                 startActivity(intent);
             }
         });
@@ -55,15 +55,15 @@ public class Certificate23 extends AppCompatActivity {
         btn_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Certificate23.this, Fragment4Activity.class);
+                Intent intent = new Intent(Certificate40.this, Fragment4Activity.class);
                 startActivity(intent);
             }
         });
 
         //리스트뷰 + SQLite
-        MyHelper23 myDBHelper = new MyHelper23(this);
+        MyHelper40 myDBHelper = new MyHelper40(this);
         SQLiteDatabase DB = myDBHelper.getReadableDatabase();
-        Cursor cursor = DB.rawQuery("select * from certificate23", null);
+        Cursor cursor = DB.rawQuery("select * from certificate40", null);
 
         while (cursor.moveToNext()){
             CerDateList.add(new CertificateData(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getInt(4), cursor.getInt(5)));
@@ -83,21 +83,23 @@ public class Certificate23 extends AppCompatActivity {
     }
 }
 
-class MyHelper23 extends SQLiteOpenHelper {
-    public MyHelper23(Context context){
-        super(context, "certificate23", null, 1);
+class MyHelper40 extends SQLiteOpenHelper {
+    public MyHelper40(Context context){
+        super(context, "certificate40", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String table = "create table certificate23 ( event varchar(20), name varchar(30) primary key, part varchar(30), agency varchar(30), written_fees integer, practical_fees integer );";
+        String table = "create table certificate40 ( event varchar(20), name varchar(30) primary key, part varchar(30), agency varchar(30), written_fees integer, practical_fees integer );";
         sqLiteDatabase.execSQL(table);
-        sqLiteDatabase.execSQL("INSERT INTO certificate23 VALUES ('숙박.여행.오락.스포츠', '스포츠경영관리사', '문화체육관광부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate40 VALUES ('제과.제빵', '떡제조기능사', '식품의약품안전처', '한국산업인력공단', 14500, 37300)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate40 VALUES ('제과.제빵', '제과기능사', '식품의약품안전처', '한국산업인력공단', 14500, 29500)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate40 VALUES ('제과.제빵', '제빵기능사', '식품의약품안전처', '한국산업인력공단', 14500, 33000)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("drop table if exists certificate23");
+        sqLiteDatabase.execSQL("drop table if exists certificate40");
         onCreate(sqLiteDatabase);
     }
 }
