@@ -28,4 +28,5 @@ public class CertificateData {
     public int getPractical_price() {
         return this.practical_price;
     }
+
 }

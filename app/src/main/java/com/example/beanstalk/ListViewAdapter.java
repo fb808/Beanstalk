@@ -1,5 +1,3 @@
-/**
-
 package com.example.beanstalk;
 
 import android.content.Context;
@@ -29,7 +27,7 @@ public class ListViewAdapter extends BaseAdapter {
     }
 
     @Override
-    public static CertificateData getItem(int i) {
+    public CertificateData getItem(int i) {
         return certificate.get(i);
     }
 
@@ -42,17 +40,20 @@ public class ListViewAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         View view1 = LayoutInflater.inflate(R.layout.listview_item, null);
 
-        TextView cerName = (TextView) view1.findViewById(R.id.item_name);
-        TextView write_price = (TextView) view1.findViewById(R.id.write_price);
-        TextView practical_price = (TextView) view1.findViewById(R.id.practical_price);
-        TextView cerAgency = (TextView) view1.findViewById(R.id.item_agency);
+        // TextView event = (TextView) view1.findViewById(R.id.tv_event);
+        TextView name = (TextView) view1.findViewById(R.id.tv_name);
+        TextView part = (TextView) view1.findViewById(R.id.tv_part);
+        TextView agency = (TextView) view1.findViewById(R.id.tv_agency);
+        TextView write_price = (TextView) view1.findViewById(R.id.tv_write_price);
+        TextView practical_price = (TextView) view1.findViewById(R.id.tv_practical_price);
 
-        cerName.setText(certificate.get(i).getName());
+        // event.setText(certificate.get(i).getEvent());
+        name.setText(certificate.get(i).getName());
+        // part.setText(certificate.get(i).getPart());
+        agency.setText(certificate.get(i).getAgency());
         write_price.setText(certificate.get(i).getWrite_price());
         practical_price.setText(certificate.get(i).getPractical_price());
-        cerAgency.setText(certificate.get(i).getAgency());
 
         return view1;
     }
 }
-**/
