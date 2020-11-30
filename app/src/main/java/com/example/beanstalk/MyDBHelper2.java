@@ -4,8 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import javax.security.cert.Certificate;
-
 public class MyDBHelper2 extends SQLiteOpenHelper {
     public MyDBHelper2(Context context){
         super(context, "certificate", null, 1);
@@ -71,156 +69,140 @@ public class MyDBHelper2 extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('목재.가구.공예', '보석가공기능사', '고용노동부', '한국산업인력공단', 14500, 40200)");
         sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('목재.가구.공예', '피아노조율산업기사', '고용노동부', '한국산업인력공단', 19400, 50200)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('보건.의료', '국제의료관광코디네이터', '보건복지부, 문화체육관광부', '한국산업인력공단', 19400, 20800)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('보건.의료', '임상심리사1급', '보건복지부', '한국산업인력공단', 19400, 20800)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('보건.의료', '임상심리사2급', '보건복지부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('보건.의료', '국제의료관광코디네이터', '보건복지부, 문화체육관광부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('보건.의료', '임상심리사1급', '보건복지부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('보건.의료', '임상심리사2급', '보건복지부', '한국산업인력공단', 19400, 20800)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('비파괴검사', '방사선비파괴검사기능사', '과학기술정보통신부', '한국산업인력공단', 14500, 35500)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('비파괴검사', '초음파비파괴검사기사', '과학기술정보통신부', '한국산업인력공단', 19400, 42800)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('비파괴검사', '침투비파괴검사산업기사', '과학기술정보통신부', '한국산업인력공단', 19400, 46400)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('비파괴검사', '방사선비파괴검사기능사', '과학기술정보통신부', '한국산업인력공단', 14500, 35500)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('비파괴검사', '초음파비파괴검사기사', '과학기술정보통신부', '한국산업인력공단', 19400, 42800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('비파괴검사', '침투비파괴검사산업기사', '과학기술정보통신부', '한국산업인력공단', 19400, 46400)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('사회복지.종교', '직업상담사1급', '고용노동부', '한국산업인력공단', 19400, 33900)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('사회복지.종교', '직업상담사2급', '고용노동부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('사회복지.종교', '직업상담사1급', '고용노동부', '한국산업인력공단', 19400, 33900)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('사회복지.종교', '직업상담사2급', '고용노동부', '한국산업인력공단', 19400, 20800)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('생산관리', '포장기술사', '산업통상자원부', '한국산업인력공단', 67800, 87100)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('생산관리', '품질경영기사', '산업통상자원부', '한국산업인력공단', 19400, 22600)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('생산관리', '품질관리기술사', '산업통상자원부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('생산관리', '포장기술사', '산업통상자원부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('생산관리', '품질경영기사', '산업통상자원부', '한국산업인력공단', 19400, 22600)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('생산관리', '품질관리기술사', '산업통상자원부', '한국산업인력공단', 67800, 87100)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('섬유', '섬유디자인산업기사', '고용노동부', '한국산업인력공단', 19400, 57200)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('섬유', '의류기사', '고용노동부', '한국산업인력공단', 19400, 31800)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('섬유', '의류기술사', '과학기술정보통신부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('섬유', '섬유디자인산업기사', '고용노동부', '한국산업인력공단', 19400, 57200)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('섬유', '의류기사', '고용노동부', '한국산업인력공단', 19400, 31800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('섬유', '의류기술사', '과학기술정보통신부', '한국산업인력공단', 67800, 87100)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('숙박.여행.오락.스포츠', '스포츠경영관리사', '문화체육관광부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('숙박.여행.오락.스포츠', '스포츠경영관리사', '문화체육관광부', '한국산업인력공단', 19400, 20800)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('식품', '수산제조기술사', '해양수산부, 식품의약품안전처', '한국산업인력공단', 67800, 87100)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('식품', '식품기사', '식품의약품안전처', '한국산업인력공단', 19400, 22600)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('식품', '식품산업기사', '식품의약품안전처', '한국산업인력공단', 19400, 55400)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('식품', '수산제조기술사', '해양수산부, 식품의약품안전처', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('식품', '식품기사', '식품의약품안전처', '한국산업인력공단', 19400, 22600)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('식품', '식품산업기사', '식품의약품안전처', '한국산업인력공단', 19400, 55400)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('안전관리', '가스산업기사', '산업통상자원부', '한국산업인력공단', 19400, 24100)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('안전관리', '인간공학기술사', '고용노동부', '한국산업인력공단', 67800, 87100)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('안전관리', '화재감식평가산업기사', '소방청', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('안전관리', '가스산업기사', '산업통상자원부', '한국산업인력공단', 19400, 24100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('안전관리', '인간공학기술사', '고용노동부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('안전관리', '화재감식평가산업기사', '소방청', '한국산업인력공단', 19400, 20800)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('어업', '수산양식기능사', '해양수산부', '한국산업인력공단', 14500, 45700)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('어업', '어로산업기사', '해양수산부', '한국산업인력공단', 19400, 20800)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('어업', '어업생산관리기사', '해양수산부', '한국산업인력공단', 19400, 25000)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('어업', '수산양식기능사', '해양수산부', '한국산업인력공단', 14500, 45700)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('어업', '어로산업기사', '해양수산부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('어업', '어업생산관리기사', '해양수산부', '한국산업인력공단', 19400, 25000)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('에너지.기상', '기상감정기사', '기상청', '한국산업인력공단', 19400, 33900)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('에너지.기상', '기상예보기술사', '기상청', '한국산업인력공단', 67800, 87100)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('에너지.기상', '에너지관리기사', '산업통상자원부', '한국산업인력공단', 19400, 22600)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('에너지.기상', '기상감정기사', '기상청', '한국산업인력공단', 19400, 33900)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('에너지.기상', '기상예보기술사', '기상청', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('에너지.기상', '에너지관리기사', '산업통상자원부', '한국산업인력공단', 19400, 22600)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('영업.판매', '텔레마케팅관리사', '고용노동부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('영업.판매', '텔레마케팅관리사', '고용노동부', '한국산업인력공단', 19400, 20800)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('용접', '용접기능사', '고용노동부', '한국산업인력공단', 14500, 40000)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('용접', '용접기술사', '과학기술정보통신부', '한국산업인력공단', 67800, 87100)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('용접', '특수용접기능사', '고용노동부', '한국산업인력공단', 14500, 49500)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('용접', '용접기능사', '고용노동부', '한국산업인력공단', 14500, 40000)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('용접', '용접기술사', '과학기술정보통신부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('용접', '특수용접기능사', '고용노동부', '한국산업인력공단', 14500, 49500)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('운전.운송', '농기계운전기능사', '농촌진흥청', '한국산업인력공단', 14500, 23500)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('운전.운송', '철도운송산업기사', '국토교통부', '한국산업인력공단', 19400, 25000)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('운전.운송', '농기계운전기능사', '농촌진흥청', '한국산업인력공단', 14500, 23500)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('운전.운송', '철도운송산업기사', '국토교통부', '한국산업인력공단', 19400, 25000)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('위험물', '위험물기능사', '소방청', '한국산업인력공단', 14500, 17200)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('위험물', '위험물기능장', '소방청', '한국산업인력공단', 34400, 24800)");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('위험물', '위험물산업기사', '소방청', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('위험물', '위험물기능사', '소방청', '한국산업인력공단', 14500, 17200)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('위험물', '위험물기능장', '소방청', '한국산업인력공단', 34400, 24800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('위험물', '위험물산업기사', '소방청', '한국산업인력공단', 19400, 20800)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('의복', '패션디자인산업기사', '고용노동부', '한국산업인력공단', 19400, 48900);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('의복', '패션머천다이징산업기사', '산업통상자원부', '한국산업인력공단', 19400, 30000);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('의복', '한복산업기사', '고용노동부', '한국산업인력공단', 19400, 49100);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('의복', '패션디자인산업기사', '고용노동부', '한국산업인력공단', 19400, 48900)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('의복', '패션머천다이징산업기사', '산업통상자원부', '한국산업인력공단', 19400, 30000)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('의복', '한복산업기사', '고용노동부', '한국산업인력공단', 19400, 49100)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('이용.미용', '미용사(네일)', '보건복지부', '한국산업인력공단', 14500, 17200);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('이용.미용', '미용사(메이크업)', '보건복지부', '한국산업인력공단', 14500, 17200);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('이용.미용', '미용사(피부)', '보건복지부', '한국산업인력공단', 14500, 27300);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('이용.미용', '미용사(네일)', '보건복지부', '한국산업인력공단', 14500, 17200)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('이용.미용', '미용사(메이크업)', '보건복지부', '한국산업인력공단', 14500, 17200)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('이용.미용', '미용사(피부)', '보건복지부', '한국산업인력공단', 14500, 27300)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('인쇄.사진', '사진기능사', '고용노동부', '한국산업인력공단', 14500, 52900);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('인쇄.사진', '인쇄기능사', '고용노동부', '한국산업인력공단', 14500, 65400);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('인쇄.사진', '전자출판기능사', '문화체육관광부', '한국산업인력공단', 14500, 27300);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('인쇄.사진', '사진기능사', '고용노동부', '한국산업인력공단', 14500, 52900)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('인쇄.사진', '인쇄기능사', '고용노동부', '한국산업인력공단', 14500, 65400)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('인쇄.사진', '전자출판기능사', '문화체육관광부', '한국산업인력공단', 14500, 27300)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('임업', '산림기사', '산림청', '한국산업인력공단', 19400, 38300);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('임업', '식물보호산업기사', '농촌진흥청', '한국산업인력공단', 19400, 47300);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ('임업', '임업종묘기능사', '산림청', '한국산업인력공단', 14500, 40800);");
-/**
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("자동차", "그린전동자동차기사", "산업통상자원부", "한국산업인력공단", 19400, 22600);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("자동차", "자동차정비기능사", "국토교통부", "한국산업인력공단", 14500, 41300);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("자동차", "자동차차체수리기능사", "국토교통부", "한국산업인력공단", 14500, 60000);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('임업', '산림기사', '산림청', '한국산업인력공단', 19400, 38300)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('임업', '식물보호산업기사', '농촌진흥청', '한국산업인력공단', 19400, 47300)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('임업', '임업종묘기능사', '산림청', '한국산업인력공단', 14500, 40800)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("전기", "건축전기설비기술사", "국토교통부", "한국산업인력공단", 67800, 87100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("전기", "전기기사", "산업통상자원부", "한국산업인력공단", 19400, 22600);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("전기", "철도전기신호기능사", "국토교통부", "한국산업인력공단", 14500, 99600);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('자동차', '그린전동자동차기사', '산업통상자원부', '한국산업인력공단', 19400, 22600)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('자동차', '자동차정비기능사', '국토교통부', '한국산업인력공단', 14500, 41300)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('자동차', '자동차차체수리기능사', '국토교통부', '한국산업인력공단', 14500, 60000)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("전자", "반도체설계산업기사", "산업통상자원부", "한국산업인력공단", 19400, 27800);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("전자", "로봇소프트웨어개발기사", "산업통상자원부", "한국산업인력공단", 19400, 30300);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("전자", "전자계산기기사", "과학기술정보통신부", "한국산업인력공단", 19400, 22600);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('전기', '건축전기설비기술사', '국토교통부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('전기', '전기기사', '산업통상자원부', '한국산업인력공단', 19400, 22600)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('전기', '철도전기신호기능사', '국토교통부', '한국산업인력공단', 14500, 99600)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("정보기술", "멀티미디어콘텐츠제작전문가", "과학기술정보통신부", "한국산업인력공단", 19400, 26300);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("정보기술", "정보처리기능사", "과학기술정보통신부", "한국산업인력공단", 14500, 17200);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("정보기술", "컴퓨터시스템응용기술사", "과학기술정보통신부", "한국산업인력공단", 67800, 87100);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('전자', '반도체설계산업기사', '산업통상자원부', '한국산업인력공단', 19400, 27800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('전자', '로봇소프트웨어개발기사', '산업통상자원부', '한국산업인력공단', 19400, 30300)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('전자', '전자계산기기사', '과학기술정보통신부', '한국산업인력공단', 19400, 22600)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("제과.제빵", "떡제조기능사", "식품의약품안전처", "한국산업인력공단", 14500, 37300);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("제과.제빵", "제과기능사", "식품의약품안전처", "한국산업인력공단", 14500, 29500);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("제과.제빵", "제빵기능사", "식품의약품안전처", "한국산업인력공단", 14500, 33000);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('정보기술', '멀티미디어콘텐츠제작전문가', '과학기술정보통신부', '한국산업인력공단', 19400, 26300)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('정보기술', '정보처리기능사', '과학기술정보통신부', '한국산업인력공단', 14500, 17200)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('정보기술', '컴퓨터시스템응용기술사', '과학기술정보통신부', '한국산업인력공단', 67800, 87100)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("조경", "조경기능사", "국토교통부", "한국산업인력공단", 14500, 30400);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("조경", "조경기사", "국토교통부", "한국산업인력공단", 19400, 27100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("조경", "조경기술사", "국토교통부", "한국산업인력공단", 67800, 87100);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('제과.제빵', '떡제조기능사', '식품의약품안전처', '한국산업인력공단', 14500, 37300)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('제과.제빵', '제과기능사', '식품의약품안전처', '한국산업인력공단', 14500, 29500)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('제과.제빵', '제빵기능사', '식품의약품안전처', '한국산업인력공단', 14500, 33000)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("조리", "복어조리기능사", "식품의약품안전처", "한국산업인력공단", 14500, 35100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("조리", "양식조리기능사", "식품의약품안전처", "한국산업인력공단", 14500, 29600);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("조리", "한식조리기능사", "식품의약품안전처", "한국산업인력공단", 14500, 26900);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('조경', '조경기능사', '국토교통부', '한국산업인력공단', 14500, 30400)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('조경', '조경기사', '국토교통부', '한국산업인력공단', 19400, 27100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('조경', '조경기술사', '국토교통부', '한국산업인력공단', 67800, 87100)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("조선", "동력기계정비기능사", "산업통상자원부", "한국산업인력공단", 14500, 33000);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("조선", "전산응용조선제도기능사", "산업통상자원부", "한국산업인력공단", 14500, 24400);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("조선", "조선산업기사", "산업통상자원부", "한국산업인력공단", 19400, 45900);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('조리', '복어조리기능사', '식품의약품안전처', '한국산업인력공단', 14500, 35100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('조리', '양식조리기능사', '식품의약품안전처', '한국산업인력공단', 14500, 29600)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('조리', '한식조리기능사', '식품의약품안전처', '한국산업인력공단', 14500, 26900)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("채광", "화약류관리기사", "경찰청", "한국산업인력공단", 19400, 46400);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("채광", "화약류관리기술사", "경찰청", "한국산업인력공단", 67800, 87100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("채광", "화약류관리산업기사", "경찰청", "한국산업인력공단", 19400, 46100);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('조선', '동력기계정비기능사', '산업통상자원부', '한국산업인력공단', 14500, 33000)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('조선', '전산응용조선제도기능사', '산업통상자원부', '한국산업인력공단', 14500, 24400)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('조선', '조선산업기사', '산업통상자원부', '한국산업인력공단', 19400, 45900)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("철도", "철도차량기술사", "국토교통부", "한국산업인력공단", 67800, 87100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("철도", "철도차량정비기능사", "국토교통부", "한국산업인력공단", 14500, 22000);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("철도", "철도차량정비기능장", "국토교통부", "한국산업인력공단", 34400, 24800);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('채광', '화약류관리기사', '경찰청', '한국산업인력공단', 19400, 46400)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('채광', '화약류관리기술사', '경찰청', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('채광', '화약류관리산업기사', '경찰청', '한국산업인력공단', 19400, 46100)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("축산", "축산기능사", "농림축산식품부", "한국산업인력공단", 14500, 40700);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("축산", "축산기사", "농림축산식품부", "한국산업인력공단", 19400, 22600);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("축산", "축산기술사", "농림축산식품부", "한국산업인력공단", 67800, 87100);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('철도', '철도차량기술사', '국토교통부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('철도', '철도차량정비기능사', '국토교통부', '한국산업인력공단', 14500, 22000)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('철도', '철도차량정비기능장', '국토교통부', '한국산업인력공단', 34400, 24800)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("토목", "항공사진기능사", "국토교통부", "한국산업인력공단", NULL, 52900);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("토목", "토목시공기술사", "국토교통부", "한국산업인력공단", 67800, 87100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("토목", "해양조사산업기사", "해양수산부", "한국산업인력공단", 19400, 20800);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('축산', '축산기능사', '농림축산식품부', '한국산업인력공단', 14500, 40700)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('축산', '축산기사', '농림축산식품부', '한국산업인력공단', 19400, 22600)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('축산', '축산기술사', '농림축산식품부', '한국산업인력공단', 67800, 87100)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("판금.제관.새시", "금속재창호기능사", "국토교통부", "한국산업인력공단", NULL, 68900);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("판금.제관.새시", "판금제관산업기사", "고용노동부", "한국산업인력공단", 19400, 100900);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("판금.제관.새시", "플라스틱창호기능사", "국토교통부", "한국산업인력공단", 14500, 79900);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('토목', '항공사진기능사', '국토교통부', '한국산업인력공단', NULL, 52900)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('토목', '토목시공기술사', '국토교통부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('토목', '해양조사산업기사', '해양수산부', '한국산업인력공단', 19400, 20800)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("항공", "항공기관기술사", "과학기술정보통신부", "한국산업인력공단", 67800, 87100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("항공", "항공기체기술사", "과학기술정보통신부", "한국산업인력공단", 67800, 87100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("항공", "항공장비정비기능사", "국토교통부", "한국산업인력공단", 14500, 34900);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('판금.제관.새시', '금속재창호기능사', '국토교통부', '한국산업인력공단', NULL, 68900)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('판금.제관.새시', '판금제관산업기사', '고용노동부', '한국산업인력공단', 19400, 100900)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('판금.제관.새시', '플라스틱창호기능사', '국토교통부', '한국산업인력공단', 14500, 79900)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("화공", "바이오화학제품제조기사", "산업통상자원부", "한국산업인력공단", 19400, 44400);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("화공", "화공기술사", "과학기술정보통신부", "한국산업인력공단", 67800, 87100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("화공", "화학분석기능사", "산업통상자원부", "한국산업인력공단", 14500, 38500);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('항공', '항공기관기술사', '과학기술정보통신부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('항공', '항공기체기술사', '과학기술정보통신부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('항공', '항공장비정비기능사', '국토교통부', '한국산업인력공단', 14500, 34900)");
 
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("환경", "대기환경산업기사", "환경부", "한국산업인력공단", 19400, 20800);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("환경", "토양환경기술사", "환경부", "한국산업인력공단", 67800, 87100);");
-        sqLiteDatabase.execSQL("INSERT INTO Certificate VALUES ("환경", "수질관리기술사", "환경부", "한국산업인력공단", 67800, 87100);");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('화공', '바이오화학제품제조기사', '산업통상자원부', '한국산업인력공단', 19400, 44400)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('화공', '화공기술사', '과학기술정보통신부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('화공', '화학분석기능사', '산업통상자원부', '한국산업인력공단', 14500, 38500)");
 
-        sqLiteDatabase.execSQL("");
-        sqLiteDatabase.execSQL("");
-        sqLiteDatabase.execSQL("");
-
-        sqLiteDatabase.execSQL("");
-        sqLiteDatabase.execSQL("");
-        sqLiteDatabase.execSQL("");
-
-        sqLiteDatabase.execSQL("");
-        sqLiteDatabase.execSQL("");
-        sqLiteDatabase.execSQL("");
-
-        sqLiteDatabase.execSQL("");
-        sqLiteDatabase.execSQL("");
- **/
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('환경', '대기환경산업기사', '환경부', '한국산업인력공단', 19400, 20800)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('환경', '토양환경기술사', '환경부', '한국산업인력공단', 67800, 87100)");
+        sqLiteDatabase.execSQL("INSERT INTO certificate VALUES ('환경', '수질관리기술사', '환경부', '한국산업인력공단', 67800, 87100)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("drop table if exists com_certificate");
+        sqLiteDatabase.execSQL("drop table if exists certificate");
         onCreate(sqLiteDatabase);
     }
 }
