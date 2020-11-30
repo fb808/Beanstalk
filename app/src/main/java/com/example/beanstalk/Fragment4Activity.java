@@ -8,14 +8,11 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Fragment4Activity extends AppCompatActivity {
-
     // 내 정보
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment4);
-
-        // 검색창 제외 메뉴바 (모든 FragmentActivity 상단에 복붙하세요.
 
         Button btn_1 = (Button) findViewById(R.id.btn_menu1);
         Button btn_2 = (Button) findViewById(R.id.btn_menu2);
@@ -54,10 +51,9 @@ public class Fragment4Activity extends AppCompatActivity {
             }
         });
 
-        Button account = (Button) findViewById(R.id.account);
-        Button privacy = (Button) findViewById(R.id.privacy);
         Button intro_service = (Button) findViewById(R.id.introduce_service);
         Button intro_developer = (Button) findViewById(R.id.introduce_developer);
+        Button logout = (Button) findViewById(R.id.logout);
 
         intro_service.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +66,13 @@ public class Fragment4Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 setContentView(R.layout.intro_developer);
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_login);
             }
         });
     }

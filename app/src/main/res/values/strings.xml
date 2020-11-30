@@ -88,4 +88,12 @@
         그렇게 탄생하게 된 이 앱이 보다 많은 사람들에게 도움이 되었으면 합니다.
     </string>
 
+    <string name="dp1_name">Name : 김지연</string>
+    <string name="dp1_school">School : 미림여자정보과학고등학교</string>
+    <string name="dp1_github">Github : jiyeon1117</string>
+
+    <string name="dp2_name">Name : 류지민</string>
+    <string name="dp2_school">School : 미림여자정보과학고등학교</string>
+    <string name="dp2_github">Github : fb808</string>
+
 </resources>

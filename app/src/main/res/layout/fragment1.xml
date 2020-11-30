@@ -6,11 +6,11 @@
     android:background="#ffffff"
     android:orientation="vertical">
 
-    <SearchView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="visible"
-        android:layout_marginTop="10dp"/>
+        android:layout_height="60dp"
+        android:src="@drawable/bean"
+        android:background="#9CD578"/>
 
     <!--    선-->
     <View
@@ -54,7 +54,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"
             android:textSize="15sp"
-            android:text="내정보"/>
+            android:text="서비스"/>
     </LinearLayout>
 
     <View

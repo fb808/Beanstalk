@@ -58,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
                     firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            //가입 성공시
+                            //가입 성공
                             if(task.isSuccessful()){
                                 dialog.dismiss();
 

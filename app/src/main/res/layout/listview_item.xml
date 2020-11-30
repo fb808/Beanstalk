@@ -8,40 +8,84 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_name"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="자격증이름"
-            android:textColor="#000000"
-            android:textSize="19sp" />
-
-        <TextView
-            android:id="@+id/tv_part"
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="NAME"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
-            android:textColor="#000000"
-            android:text="part"/>
+            android:orientation="horizontal">
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:text="PART"/>
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
             <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="필기 : "
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
                 android:id="@+id/tv_write_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="수수료"
                 android:textSize="15sp"/>
-
             <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="원        "
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="실기 : "
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
                 android:id="@+id/tv_practical_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="수수료"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="원   "
                 android:textSize="15sp"/>
 
         </LinearLayout>
@@ -57,16 +101,17 @@
 
         <TextView
             android:id="@+id/tv_agency"
+            android:padding="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="한국산업인력공단"/>
+            android:text="AGENCY"/>
 
     </LinearLayout>
 
     <View
         android:layout_width="wrap_content"
-        android:layout_height="2dp"
+        android:layout_height="0.5dp"
         android:background="#000000"/>
 
 </LinearLayout>

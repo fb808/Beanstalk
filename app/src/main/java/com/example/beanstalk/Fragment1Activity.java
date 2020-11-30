@@ -1,30 +1,18 @@
 package com.example.beanstalk;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
 
 public class Fragment1Activity extends AppCompatActivity {
-    MyDBHelper2 myDBHelper;
-    ArrayList<CertificateData> CerDateList;
-
     //자격증 정보
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment1);
-
-        // 검색창 제외 메뉴바 (모든 FragmentActivity 상단에 복붙하세요.
 
         Button btn_1 = (Button) findViewById(R.id.btn_menu1);
         Button btn_2 = (Button) findViewById(R.id.btn_menu2);
@@ -63,21 +51,43 @@ public class Fragment1Activity extends AppCompatActivity {
             }
         });
 
-//        myDBHelper = new MyDBHelper2(this);
-//        SQLiteDatabase DB = myDBHelper.getReadableDatabase();
-//        Cursor cursor = DB.rawQuery("select * from certificate", null);
-//
-//        while (cursor.moveToNext()){
-//            CerDateList.add(new CertificateData(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getInt(4), cursor.getInt(5)));
-//        }
-//
-//        cursor.close();
-//        DB.close();
-
+        //메뉴 버튼
         Button btn1 = (Button) findViewById(R.id.btn1);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate1.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn2 = (Button) findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate2.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn3 = (Button) findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate3.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn4 = (Button) findViewById(R.id.btn4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate4.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn5 = (Button) findViewById(R.id.btn5);
         Button btn6 = (Button) findViewById(R.id.btn6);
         Button btn7 = (Button) findViewById(R.id.btn7);
@@ -126,28 +136,6 @@ public class Fragment1Activity extends AppCompatActivity {
         Button btn50 = (Button) findViewById(R.id.btn50);
         Button btn51 = (Button) findViewById(R.id.btn51);
         Button btn52 = (Button) findViewById(R.id.btn52);
-
-        /**
-        ListView listView = (ListView) findViewById(R.id.com_ListView);
-
-        final ListViewAdapter listViewAdapter = new ListViewAdapter(this, CerDateList);
-        listView.setAdapter(listViewAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(getApplicationContext(), "선택 " + CerDateList.get(i).getName(), Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Fragment1Activity.this, Fragment2Activity.class);
-                intent.putExtra("event", CerDateList.get(i).getEvent());
-                intent.putExtra("name", CerDateList.get(i).getName());
-                intent.putExtra("part", CerDateList.get(i).getPart());
-                intent.putExtra("agency", CerDateList.get(i).getAgency());
-                intent.putExtra("write_fees", CerDateList.get(i).getWrite_price());
-                intent.putExtra("practical_fees", CerDateList.get(i).getPractical_price());
-                startActivity(intent);
-            }
-        });
-         **/
     }
 
 }

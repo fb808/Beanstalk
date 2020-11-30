@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 String password = et_password.getText().toString().trim();
                 firebaseAuth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
-
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){

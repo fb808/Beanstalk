@@ -8,14 +8,11 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Fragment3Activity extends AppCompatActivity {
-
     // 캘린더
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment3);
-
-        // 검색창 제외 메뉴바 (모든 FragmentActivity 상단에 복붙하세요.
 
         Button btn_1 = (Button) findViewById(R.id.btn_menu1);
         Button btn_2 = (Button) findViewById(R.id.btn_menu2);
