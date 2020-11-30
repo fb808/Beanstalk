@@ -413,17 +413,90 @@ public class Fragment1Activity extends AppCompatActivity {
         });
 
         Button btn41 = (Button) findViewById(R.id.btn41);
+        btn41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate41.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn42 = (Button) findViewById(R.id.btn42);
+        btn42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate42.class);
+                startActivity(intent);
+            }
+        });
+ /**
         Button btn43 = (Button) findViewById(R.id.btn43);
+        btn43.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate43.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn44 = (Button) findViewById(R.id.btn44);
+        btn44.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate44.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn45 = (Button) findViewById(R.id.btn45);
+        btn45.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate45.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn46 = (Button) findViewById(R.id.btn46);
+        btn46.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate46.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn47 = (Button) findViewById(R.id.btn47);
+        btn47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate47.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn48 = (Button) findViewById(R.id.btn48);
+        btn48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate48.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn49 = (Button) findViewById(R.id.btn49);
+        btn49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fragment1Activity.this, Certificate49.class);
+                startActivity(intent);
+            }
+        });
+
         Button btn50 = (Button) findViewById(R.id.btn50);
         Button btn51 = (Button) findViewById(R.id.btn51);
         Button btn52 = (Button) findViewById(R.id.btn52);
+  **/
     }
 
 }
