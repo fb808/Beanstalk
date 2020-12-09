@@ -27,9 +27,11 @@
         <activity android:name=".Fragment3Activity" />
         <activity android:name=".Fragment4Activity" />
 
+        <!--
         <activity android:name=".Certificate52" />
         <activity android:name=".Certificate51" />
         <activity android:name=".Certificate50" />
+        -->
         <activity android:name=".Certificate49" />
         <activity android:name=".Certificate48" />
         <activity android:name=".Certificate47" />

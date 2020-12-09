@@ -429,7 +429,7 @@ public class Fragment1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
- /**
+
         Button btn43 = (Button) findViewById(R.id.btn43);
         btn43.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -492,7 +492,7 @@ public class Fragment1Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+      /**
         Button btn50 = (Button) findViewById(R.id.btn50);
         Button btn51 = (Button) findViewById(R.id.btn51);
         Button btn52 = (Button) findViewById(R.id.btn52);
